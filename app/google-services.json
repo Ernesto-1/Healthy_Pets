@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "838328986466",
+    "project_id": "my-healthy-pets",
+    "storage_bucket": "my-healthy-pets.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838328986466:android:c66f005ac03ca1564bda3b",
+        "android_client_info": {
+          "package_name": "com.example.healthypetsuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838328986466-3f5d3q1jt3dlv6u4485g11748u66rue0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.healthypetsuser",
+            "certificate_hash": "ee893ac45255e87e92787b3f44b8fbe6c04ccecf"
+          }
+        },
+        {
+          "client_id": "838328986466-anqv2drhu2uu748dt185k70ru28copmf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM201Fgxt2R16dL19N7zwYwO1YkkmV61g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "838328986466-anqv2drhu2uu748dt185k70ru28copmf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
