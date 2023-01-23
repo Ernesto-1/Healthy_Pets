@@ -7,18 +7,18 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:838328986466:android:c66f005ac03ca1564bda3b",
+        "mobilesdk_app_id": "1:838328986466:android:528e27d3790871ce4bda3b",
         "android_client_info": {
-          "package_name": "com.example.healthypetsuser"
+          "package_name": "com.example.healthypets"
         }
       },
       "oauth_client": [
         {
-          "client_id": "838328986466-3f5d3q1jt3dlv6u4485g11748u66rue0.apps.googleusercontent.com",
+          "client_id": "838328986466-efja18cafl05jc9t0mb3davhr59u20vg.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.healthypetsuser",
-            "certificate_hash": "ee893ac45255e87e92787b3f44b8fbe6c04ccecf"
+            "package_name": "com.example.healthypets",
+            "certificate_hash": "1d26bfcda69efcc282e5c272761977b35a91aebf"
           }
         },
         {

@@ -23,12 +23,16 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.healthypets.R
+import com.example.healthypets.presentation.login.HPLoginViewModel
 import com.example.healthypets.ui.theme.Black
 import com.example.healthypets.ui.theme.BtnGreen
 import com.example.healthypets.ui.theme.White
 
 @Composable
-fun HPLogin(){
+fun HPLogin(
+    viewModel: HPLoginViewModel
+){
+
      Box(modifier = Modifier.fillMaxSize()) {
          Image(
              painter = painterResource(id = R.drawable.background_login), contentDescription = "img_login", modifier = Modifier
@@ -51,7 +55,7 @@ fun HPLogin(){
              Spacer(modifier = Modifier.height(10.dp))
              Column(modifier = Modifier.fillMaxSize(),verticalArrangement = Arrangement.SpaceBetween,horizontalAlignment = Alignment.CenterHorizontally) {
                  Text(text = "Olvide mi contraseña", color = White, modifier = Modifier.clickable {  })
-                 ButtonDefault() {
+                 ButtonDefault(textButton = "Entrar", modifier = Modifier.wrapContentSize()) {
                  }
                  Text(text = "Registrarme", color = White, fontSize = 14.sp,modifier = Modifier.clickable {  }.padding(bottom = 10.dp))
              }
@@ -62,12 +66,6 @@ fun HPLogin(){
 
 
      }
-}
-
-@Preview
-@Composable
-fun HPLoginView(){
-    HPLogin()
 }
 
 @Composable
@@ -146,7 +144,7 @@ fun ButtonDefault(
             .width(108.dp)
     ) {
         Text(
-            text = textButton ?: ""
+            text = textButton ?: "", modifier = modifier.wrapContentSize()
         )
     }
 }
