@@ -16,7 +16,7 @@
         android:fillType="nonZero"/>
     <path
         android:pathData="M0,0.54L310.5,0.54L310.5,672.54L0,672.54ZM0,0.54"
-        android:fillColor="#f4ebfc"
+        android:fillColor="#999999"
         android:fillType="nonZero"/>
   </group>
   <group>
@@ -41,14 +41,6 @@
     <group>
       <clip-path
           android:pathData="M-185.6,702.31L-15.82,309.16L377.33,478.95L207.55,872.09ZM-185.6,702.31"/>
-      <group>
-        <clip-path
-            android:pathData="M-185.6,702.31L-16.15,309.95L376.21,479.39L206.77,871.75ZM-185.6,702.31"/>
-        <path
-            android:pathData="M-185.6,702.31L-15.82,309.16L377.33,478.95L207.55,872.09ZM-185.6,702.31"
-            android:fillColor="#82649e"
-            android:fillType="nonZero"/>
-      </group>
     </group>
   </group>
   <group>
@@ -62,7 +54,7 @@
             android:pathData="M320.33,-4.83L422.02,38.96L328.08,257.12L226.39,213.32ZM320.33,-4.83"/>
         <path
             android:pathData="M320.33,-4.83L422.44,39.14L328.43,257.44L226.32,213.47ZM320.33,-4.83"
-            android:fillColor="#fafcc7"
+            android:fillColor="#84B1B8"
             android:fillType="nonZero"/>
       </group>
     </group>
@@ -78,7 +70,7 @@
             android:pathData="M-13.57,180.33L-49.23,18.02L130.91,-21.57L166.58,140.74ZM-13.57,180.33"/>
         <path
             android:pathData="M-13.57,180.33L-49.29,17.76L131.21,-21.91L166.94,140.66ZM-13.57,180.33"
-            android:fillColor="#acaf54"
+            android:fillColor="#dedede"
             android:fillType="nonZero"/>
       </group>
     </group>
