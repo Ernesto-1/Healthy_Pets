@@ -29,6 +29,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.viewModelScope
+import androidx.navigation.NavController
+import androidx.navigation.NavHostController
 import com.example.healthypets.R
 import com.example.healthypets.presentation.login.HPLoginEvent
 import com.example.healthypets.presentation.login.HPLoginViewModel
@@ -39,7 +41,7 @@ import com.example.healthypets.utils.Resource
 import com.google.firebase.auth.FirebaseAuth
 
 @Composable
-fun HPLogin(navController: () -> Unit = {}, viewModel: HPLoginViewModel = hiltViewModel()) {
+fun HPLogin(navController: NavHostController, viewModel: HPLoginViewModel = hiltViewModel()) {
     var email by rememberSaveable { mutableStateOf("") }
     var password by rememberSaveable { mutableStateOf("") }
     var hidden by rememberSaveable { mutableStateOf(true) } //1
@@ -128,15 +130,12 @@ fun HPLogin(navController: () -> Unit = {}, viewModel: HPLoginViewModel = hiltVi
                             .width(282.dp)
                             .clip(RoundedCornerShape(12.dp))
                     ) {
-                        //navController.invoke()
                         viewModel.logIn(email = email, password = password)
                             .observe(lifecycleOwner.value) { result ->
                                 when (result) {
                                     is Resource.Loading -> {}
                                     is Resource.Success -> {
-                                        navController.invoke()
-                                        result.data?.let { Log.d("cfvgbhnjl", it.uid) }
-
+                                        navController.navigate("HPHome")
                                     }
                                     is Resource.Failure -> {
                                         Log.d("cfvgbhnjl",  result.exception.toString())
@@ -158,8 +157,8 @@ fun HPLogin(navController: () -> Unit = {}, viewModel: HPLoginViewModel = hiltVi
                     fontSize = 14.sp,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier
-                        .clickable { }
-                        .padding(bottom = 10.dp)
+                        .clickable { navController.navigate("HPSignUp")}
+                        .padding(bottom = 15.dp)
                 )
             }
         }
@@ -169,7 +168,7 @@ fun HPLogin(navController: () -> Unit = {}, viewModel: HPLoginViewModel = hiltVi
 @Preview
 @Composable
 fun HPLoginView() {
-    HPLogin()
+    //HPLogin()
 }
 
 @Composable

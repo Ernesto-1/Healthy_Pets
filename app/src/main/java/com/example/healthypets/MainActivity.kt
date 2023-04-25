@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
                         navigationController.navigate("HPHome")
                     }*/
                     NavHost(navController = navigationController, startDestination = "HPLogin") {
-                        composable("HPLogin") { HPLogin(navController = { navigationController.navigate("HPHome") }) }
+                        composable("HPLogin") { HPLogin(navController = navigationController) }
                         composable("HPHome"){ HPHome() }
                         composable("HPSignUp"){ HPSignUp() }
                     }
